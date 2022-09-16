@@ -10,14 +10,14 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    let result;
     if (sex==="male") {
-      const result = (879 + 10.2*weight)*intensity
-      setCalories(result)
+      result = (879 + 10.2*weight)*intensity
     }
     if (sex==="female") {
-      const result = (795 + 7.18*weight)*intensity
-      setCalories(result)
+      result = (795 + 7.18*weight)*intensity
     }
+    setCalories(result)
   }
 
   return (
